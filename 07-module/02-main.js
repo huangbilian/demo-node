@@ -18,6 +18,10 @@ console.dir(module);*/
 
 const area = require('./02-export-o2');
 
-module.exports.circumferences = (radius)=>Math.PI*2*radius;
-module.exports.area=(radius)=>Math.PI*radius*radius;
-console.dir(module);
+//module.exports.circumferences = (radius)=>Math.PI*2*radius;
+//module.exports.area=(radius)=>Math.PI*radius*radius;
+
+console.log('\ndiameter:\t', circle.diameter(10));
+console.log('circumference:\t', circle.circumference(10));
+console.log('area:\t\t', circle.area(10));
+

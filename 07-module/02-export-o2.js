@@ -1,15 +1,14 @@
 #!/usr/bin/node
 
-function area(radius){
+module.exports.area = function area(radius){
   return Math.PI*radius*radius;
           
 };
-function circumference(radius){
+module.exports.circumference = function circumference(radius){
   return 2*Math.PI*radius;          
 };
-  function diameter(radius){
-    return 2*radius;          
-  }
+module.exports.diameter = function diameter(radius){
+  return 2*radius;          
+}
 console.dir(module);
-module.exports.area = area;
 
