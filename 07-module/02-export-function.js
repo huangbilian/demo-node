@@ -11,10 +11,11 @@ function circle(radius){
 
   return {
     area:area,
-    circumference:circumference;
-  }
+    circumference:circumference
+  };
 }
 
-concsole.dir(module);
+console.dir(module);
 module.exports = circle;
-console.log(p);
+
+

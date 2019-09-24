@@ -14,7 +14,7 @@ for(var c='a'.charCodeAt(0); c<='z'.charCodeAt(0); c++) {
 }
 
 stdin.on('end', function() {
-    stdout.end();
+  stdout.end();
 });
 
 

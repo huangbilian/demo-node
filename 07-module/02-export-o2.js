@@ -9,6 +9,6 @@ module.exports.circumference = function circumference(radius){
 };
 module.exports.diameter = function diameter(radius){
   return 2*radius;          
-}
+};
 console.dir(module);
 

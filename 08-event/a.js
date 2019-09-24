@@ -6,7 +6,7 @@ function A(){
 
   this.a3 = function(){
     console.log('a1=%d,a2=%d',this.a1,this.a2);
-  }
+  };
 }
 
 var a = new A();
@@ -22,7 +22,7 @@ function B(){
 
   this.b3 = function(){
     console.log('b1=%d,b2=%d',this.b1,this.b2);
-  }
+  };
 }
 
 B.prototype.__proto__=A.prototype;

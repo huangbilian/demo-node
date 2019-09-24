@@ -16,7 +16,7 @@ log('r=10,circle diameter:',circle.diameter(10));
 log('r=10,circle area:',circle.area(10));
 console.dir(module);*/
 
-const area = require('./02-export-o2');
+const circle = require('./02-export-o2');
 
 //module.exports.circumferences = (radius)=>Math.PI*2*radius;
 //module.exports.area=(radius)=>Math.PI*radius*radius;

@@ -25,7 +25,7 @@ function deleteDir(folder) {
     if(fs.statSync(file).isFile()) {
       fs.unlinkSync(file);
       continue;                   
-     }
+    }
 
     if(fs.statSync(file).isDirectory()) deleteDir(file);
                 

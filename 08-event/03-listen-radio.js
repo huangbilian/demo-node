@@ -10,8 +10,8 @@ const station = {
 var radio = new Radio(station);
 
 radio.on('open', (station) => {
-    console.log('"%s" FM %s opened', station.name, station.freq);
-    console.log('lalala...');
+  console.log('"%s" FM %s opened', station.name, station.freq);
+  console.log('lalala...');
 
 });
 

@@ -10,7 +10,12 @@ function longTask(){
   return num;
 
 }
-console.time('DOWNLODE-FILE');
+/*console.time('DOWNLODE-FILE');
 var n = longTask();
 console.timeEnd('DOWNLODE-FILE');
-console.log('n=%d',n);
+console.log('n=%d',n);*/
+console.time('TEST');
+longTask();
+console.timeEnd('TEST');
+
+

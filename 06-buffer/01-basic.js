@@ -7,7 +7,7 @@ buf1[0]=0x11;
 log('buf1 length:',buf1.length);
 log('buf1:',buf1);
 
-for(var i=0;i>buf1.length;i++){
+for(var i=0;i<buf1.length;i++){
   buf1[i]=i;
 }
 log('buf1:',buf1);
@@ -30,7 +30,7 @@ log('buf4:',buf4);
 buf4.copy(buf3, 0, 0, buf3.length);
 log('buf3:',buf3);
 
-var str = "你好 wangding";
+var str = '你好 wangding';
 var buf5 =new Buffer(str);
 log('buf5 length',buf5.length);
 log('string length',str.length);

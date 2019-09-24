@@ -1,19 +1,19 @@
 #!/usr/bin/node
 
-onst EventEmitter = require('events').EventEmitter;
+const EventEmitter = require('events').EventEmitter;
 
 function MusicPlayer(track) {
-    this.track = track;
-    this.playing = false;
-    this.events = {
-      play: 'play',
-      stop: 'stop'                   
-    };
+  this.track = track;
+  this.playing = false;
+  this.events = {
+    play: 'play',
+    stop: 'stop'                   
+  };
         
-    for(var methodName in EventEmitter.prototype) {
-      //console.log(methodName);
-      this[methodName] = EventEmitter.prototype[methodName];     
-    }
+  for(var methodName in EventEmitter.prototype) {
+    //console.log(methodName);
+    this[methodName] = EventEmitter.prototype[methodName];     
+  }
 }
 
 MusicPlayer.prototype = {
@@ -44,6 +44,7 @@ musicPlayer.on(e.stop, () => {
 musicPlayer.emit(e.play);
 
 setTimeout(() => {
-    musicPlayer.emit(e.stop);
+  musicPlayer.emit(e.stop);
 
 }, 2000);
+

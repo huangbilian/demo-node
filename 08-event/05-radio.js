@@ -4,9 +4,9 @@
 function Radio(station){
   var _listeners = {
     //'play':[fn1,fn2,fn3],
-   // 'stop':[]
-  }
- // EventEmitter.call(this);
+    // 'stop':[]
+  };
+  // EventEmitter.call(this);
 
 
   setTimeout(()=>{
@@ -22,8 +22,8 @@ function Radio(station){
       console.error('Error: %s not defined',evt);
       process.exit();
     }
-     _listeners[evt].forEach((fn)=>{
-       fn.call(this,arg);
+    _listeners[evt].forEach((fn)=>{
+      fn.call(this,arg);
     });
   }
 
@@ -32,6 +32,6 @@ function Radio(station){
       _listeners[evt] = [];              
     }
     _listeners[evt].push(fn);
-  }
+  };
 }
 module.exports = Radio;

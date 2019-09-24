@@ -1,21 +1,21 @@
 #!/usr/bin/node
 
+/*global pi:true */
 global.pi = Math.PI;
 
 global.circle = (radius) => {
   function circumference() {
-    return pi * 2 * radius;          
+    return pi * 2 * radius;   
   }
 
   function area() {
-    return pi * radius * radius;          
+    return pi * radius * radius;         
   }
 
   return {
     area: area,
-    circumference: circumference                  
+    circumference: circumference                 
   };
-
 };
 
 global.objCircle = {
