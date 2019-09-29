@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const http = require('http'),
-        log = console.log;
+      log = console.log;
 
 http.createServer((req,res)=>{
   log(`${req.method} ${req.url} ${req.httpVersion}`);
