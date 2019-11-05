@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/huangbilian/demo-node/issues"
   },
-  "homepage": "https://github.com/huangbilian/demo-node#readme"
+  "homepage": "https://github.com/huangbilian/demo-node#readme",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  }
 }

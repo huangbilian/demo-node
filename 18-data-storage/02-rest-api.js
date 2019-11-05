@@ -1,7 +1,9 @@
 #!/usr/bin/node
 const http=require('http'),
+      fs=require('fs'),
       log=console.log;
-var items =[];
+//var items =[];
+var items = loadData();
 http.createServer((req,res)=>{
   log(`${req.method} ${req.url} HTTP/${req.httpVersion}`);
   log(req.headers);
@@ -86,3 +88,16 @@ function err(res){
   res.end('Something wrong');
 }
 
+function loadData(){
+  try{
+    var data = fs.readFileSync('./todo-list.txt','utf8');
+    return JSON.parse(data);
+  }catch(e){
+    return [];
+  }
+}
+
+process.on('SIGINT',()=>{
+  fs.writeFileSync('./todo-list.txt',JSON.stringify(items));
+  process.exit();
+});

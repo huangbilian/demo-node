@@ -14,8 +14,8 @@ try{
       for(var i=0;i<file.length;i++){
         var obj=[];
         var obj={
-          "fileName":file[i],
-          "fileSize":fs.statSync(file[i]).size
+          'fileName':file[i],
+          'fileSize':fs.statSync(file[i]).size
         };
         files.push(obj);
       }
